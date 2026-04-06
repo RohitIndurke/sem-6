@@ -1,4 +1,4 @@
-class Slip1A extends Thread {
+class slip1_1 extends Thread {
 
     public void run() {
         try {
@@ -12,7 +12,7 @@ class Slip1A extends Thread {
     }
 
     public static void main(String args[]) {
-        Slip1A t1 = new Slip1A();
+        slip1_1 t1 = new slip1_1();
         t1.start();
     }
 }
