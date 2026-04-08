@@ -1,1 +1,3 @@
 *.class
+*.clangd
+a.exe
