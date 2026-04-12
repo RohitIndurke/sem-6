@@ -31,8 +31,14 @@ int main(int argc, char *argv[])
             local_min = sub_array[i];
     }
 
+    // Print local minimums from each process
+    printf("Rank %d: local_min = %d\n", rank, local_min);
+
     // Use MPI_MIN instead of MPI_MAX to find minimum
     MPI_Reduce(&local_min, &global_min, 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
+
+    // Barrier to synchronize all processes
+    MPI_Barrier(MPI_COMM_WORLD);
 
     if(rank == 0) {
         printf("Global Min = %d\n", global_min);
