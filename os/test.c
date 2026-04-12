@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
-void main(){
+int main(){
     int n;
     printf("Enter the no\n");
     scanf("%d",&n);
