@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     }
 
     // Print local sum from each process
-    printf("Rank %d: local_sum of odd numbers = %lld\n", rank, local_sum);
+    printf("Rank %d: local_sum of odd numbers = %d\n", rank, local_sum);
 
     // Use MPI_SUM to sum all local sums
     MPI_Reduce(&local_sum, &global_sum, 1, MPI_LONG_LONG, MPI_SUM, 0, MPI_COMM_WORLD);
