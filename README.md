@@ -1,6 +1,4 @@
-Got it — you want **ONE single continuous README.md**, no breaks, no multiple parts. Here it is 👇
 
----
 
 ````md
 # 🚀 Java Exam All-in-One Templates
