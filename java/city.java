@@ -21,7 +21,7 @@ class city {
                 CityCode.put(name, code);
             } else if (n == 2) {
                 System.out.print("\nEnter City name to remove\n");
-                String name = sc.next();
+                String name = sc.ne  xt();
                 if (CityCode.remove(name) != null) {
                     System.out.print("\nCity Removed Done\n");
                 } else {
