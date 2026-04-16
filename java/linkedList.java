@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LinkedListMaster {
+public class linkedList {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,10 +17,10 @@ public class LinkedListMaster {
             if (choice == 1) {
                 System.out.print("Enter value: ");
                 list.addLast(sc.nextLine());
-                System.out.println("✓ Added");
+                System.out.println(" Added");
             } else if (choice == 2) {
                 if (!list.isEmpty()) System.out.println(
-                    "✓ Deleted: " + list.removeFirst()
+                    " Deleted: " + list.removeFirst()
                 );
                 else System.out.println("✗ Empty");
             } else if (choice == 3) {
