@@ -1,17 +1,14 @@
 import java.sql.*;
 
-public class slip2_1 {
+class slip2_1 {
 
     public static void main(String args[]) {
         Connection con = null;
-        Statement stmt = null;
-        ResultSet rs = null;
+        ResultSet res = null;
+        Statement st = null;
 
         try {
-            // Load PostgreSQL Driver
-            Class.forName("org.postgresql.Driver");
-
-            // Connect to database
+            Class.forName("org:postgresql:Driver");
             con = DriverManager.getConnection(
                 "jdbc:postgresql:pe2",
                 "postgres",
@@ -69,7 +66,7 @@ public class slip2_1 {
             stmt.close();
             con.close();
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.print("\nconnection fail\n" + e);
         }
     }
 }
