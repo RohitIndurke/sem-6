@@ -1,6 +1,5 @@
 
 
-````md
 # 🚀 Java Exam All-in-One Templates
 
 Quick reusable templates for Java practical exams.
@@ -12,6 +11,7 @@ Quick reusable templates for Java practical exams.
 Use this for any Map / Set question.
 
 ```java
+
 import java.util.*;
 
 public class Main {
@@ -37,7 +37,7 @@ public class Main {
 }
 ````
 
----
+
 
 ## 🔗 2. LINKEDLIST TEMPLATE
 
