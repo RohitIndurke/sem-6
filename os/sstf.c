@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main(){
+int main(){
     int n, head, totalSeek = 0;
 
     printf("Enter number of requests: ");
@@ -23,7 +23,6 @@ void main(){
     for(int i = 0; i < n; i++){
         int closest = -1;
         int minDistance = 9999;
-
         // find closest unvisited
         for(int j = 0; j < n; j++){
             if(!visited[j]){
@@ -35,7 +34,6 @@ void main(){
                 }
             }
         }
-
         // move head
         visited[closest] = 1;
         totalSeek += minDistance;
