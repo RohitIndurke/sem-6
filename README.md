@@ -1,105 +1,58 @@
+# 📚 Sem 6 — Practical Exam Slips
 
-
-# 🚀 Java Exam All-in-One Templates
-
-Quick reusable templates for Java practical exams.
+> TYBSc (CS) Semester VI — Practical Solutions
 
 ---
 
-## 📦 1. COLLECTIONS TEMPLATE (Map / Set)
+## 📁 Subjects
 
-Use this for any Map / Set question.
+| # | Subject | Slips | Language |
+|---|---------|-------|----------|
+| 1 | [Java](#-java) | 30 slips × 2 questions | Java / Swing / JSP |
+| 2 | [OS](#-operating-systems) | 30 slips × 2 questions | C |
 
-```java
+---
 
-import java.util.*;
+## ☕ Java
+---
 
-public class Main {
-    public static void main(String[] args) {
+### 🗂️ Folder Structure
 
-        Map<String, String> data = new TreeMap<>();
-
-        // Add
-        data.put("A", "Apple");
-        data.put("B", "Ball");
-
-        // Remove
-        data.remove("A");
-
-        // Search
-        System.out.println(data.get("B"));
-
-        // Display
-        for(String k : data.keySet()) {
-            System.out.println(k + " → " + data.get(k));
-        }
-    }
-}
-````
-
-
-
-## 🔗 2. LINKEDLIST TEMPLATE
-
-Use this for LinkedList questions.
-
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-
-        LinkedList<String> list = new LinkedList<>();
-
-        // Add
-        list.addLast("A");
-        list.addLast("B");
-        list.addLast("C");
-
-        // Remove
-        list.removeFirst();
-
-        // Display
-        System.out.println(list);
-
-        // Reverse Display
-        for(int i = list.size() - 1; i >= 0; i--) {
-            System.out.println(list.get(i));
-        }
-    }
-}
+```
+java/
+└── slips/
+    ├── slip1/
+    │   ├── ques1.java
+    │   └── ques2.java
+    ├── slip2/
+    │   ├── ques1.java
+    │   └── ques2.java
+    ├── ...
+    └── slip30/
+        ├── ques1.java
+        └── ques2.java
 ```
 
 ---
 
-## 🧵 3. MULTITHREADING TEMPLATE
+## 🖥️ Operating Systems
 
-Use this for thread-related questions.
 
-```java
-class MyThread extends Thread {
-    String text;
-    int delay;
+### 🗂️ Folder Structure
 
-    MyThread(String text, int delay) {
-        this.text = text;
-        this.delay = delay;
-    }
-
-    public void run() {
-        try {
-            for(char c : text.toCharArray()) {
-                System.out.println(c);
-                Thread.sleep(delay * 1000);
-            }
-        } catch (InterruptedException e) {}
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        new MyThread("TEXT1", 2).start();
-        new MyThread("TEXT2", 2).start();
-    }
-}
 ```
+os/
+└── slips-solution/
+    ├── slip1/
+    │   ├── ques1.c
+    │   └── ques2.c
+    ├── slip2/
+    │   ├── ques1.c
+    │   └── ques2.c
+    ├── ...
+    └── slip30/
+        ├── ques1.c
+        └── ques2.c
+```
+
+---
